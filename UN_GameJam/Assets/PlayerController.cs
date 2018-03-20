@@ -8,11 +8,7 @@ public class PlayerController : MonoBehaviour {
     public bool dashCooldown = true;
     public float timer = 0f;
     public Image bar;
-    void Start ()
-    {
-
-	}
-
+    //Dash function
     void Dash()
     {
         bool dash_ready = false;
@@ -36,7 +32,7 @@ public class PlayerController : MonoBehaviour {
     }
 void Update () {
 
-        //Dash function
+        
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Dash();
@@ -46,10 +42,12 @@ void Update () {
         if (Input.GetKey(KeyCode.D))
         {
             currentPosition.x += speed * Time.deltaTime;
+            transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
         if (Input.GetKey(KeyCode.A))
         {
             currentPosition.x -= speed * Time.deltaTime;
+            transform.localRotation = Quaternion.Euler(0,180,0);
         }
         if (Input.GetKey(KeyCode.W))
         {
