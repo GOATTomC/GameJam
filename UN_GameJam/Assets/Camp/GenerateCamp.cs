@@ -62,6 +62,8 @@ public class GenerateCamp : MonoBehaviour {
             SpawnHunter(spawnPositions[spawnPos], objects);
 
         }
+
+        this.GetComponent<GenerateTraces>().StartGeneratingTraces(spawnPositions);
     }
 
     private bool CanPlace(Vector2 location, GameObject objectToSpawn)
