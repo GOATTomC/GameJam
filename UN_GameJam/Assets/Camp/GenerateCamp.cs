@@ -6,6 +6,7 @@ public class GenerateCamp : MonoBehaviour {
 
     [SerializeField] private GameObject[] m_CampObjects;
     [SerializeField] private GameObject m_HunterObject;
+    [SerializeField] private GameObject m_CampInfoPrefab;
 
 
     [SerializeField] private int m_AmountOfCamps;
@@ -35,7 +36,7 @@ public class GenerateCamp : MonoBehaviour {
         }
 
         GenCamp(spawnPositions);
-    
+        
     }
 
     private void GenCamp(Vector2[] spawnPositions)
@@ -60,7 +61,7 @@ public class GenerateCamp : MonoBehaviour {
             }
 
             SpawnHunter(spawnPositions[spawnPos], objects);
-
+            GenCampInfo(objects);
         }
 
         this.GetComponent<GenerateTraces>().StartGeneratingTraces(spawnPositions);
@@ -85,6 +86,26 @@ public class GenerateCamp : MonoBehaviour {
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireCube(this.transform.position, m_RadiusBox);
+    }
+
+    private void GenCampInfo(Transform[] objects)
+    {
+        Vector3 averagePosition = Vector2.zero;
+
+        for (int campObject = 0; campObject < objects.Length; campObject++)
+        {
+            averagePosition += objects[campObject].position;
+        }
+
+        averagePosition /= objects.Length;
+
+        CampInfo tempCampInfo = Instantiate(m_CampInfoPrefab, averagePosition, Quaternion.identity, this.transform).GetComponent<CampInfo>();
+
+        for (int campObject = 0; campObject < objects.Length; campObject++)
+        {
+            if (tempCampInfo != null)
+                objects[campObject].GetComponent<CampItem>().CampInfo = tempCampInfo;
+        }
     }
 
 

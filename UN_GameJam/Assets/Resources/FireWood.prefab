@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4538266660085184}
   - component: {fileID: 212747149348217250}
   - component: {fileID: 61059210597744746}
+  - component: {fileID: 114819274514087536}
   m_Layer: 0
   m_Name: FireWood
   m_TagString: Untagged
@@ -66,6 +67,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.77, y: 1.8747048}
   m_EdgeRadius: 0
+--- !u!114 &114819274514087536
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1769018919711226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae5ed0967fd921845aef646c934a8e22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212747149348217250
 SpriteRenderer:
   m_ObjectHideFlags: 1

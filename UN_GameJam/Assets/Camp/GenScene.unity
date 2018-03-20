@@ -296,6 +296,8 @@ MonoBehaviour:
   - {fileID: 1769018919711226, guid: 69afdd60ee78dc549a6f597ff07ae6be, type: 2}
   m_HunterObject: {fileID: 1771062691231908, guid: ddc5da536c879c646b197a004df2526b,
     type: 2}
+  m_CampInfoPrefab: {fileID: 1730714672266882, guid: 5035ab754688beb4d9d8e6315b160276,
+    type: 2}
   m_AmountOfCamps: 10
   m_RadiusBox: {x: 159.69, y: 92.6}
   m_GenCheckRadius: 8
@@ -2232,6 +2234,8 @@ MonoBehaviour:
   - {fileID: 1769018919711226, guid: 69afdd60ee78dc549a6f597ff07ae6be, type: 2}
   m_HunterObject: {fileID: 1771062691231908, guid: ddc5da536c879c646b197a004df2526b,
     type: 2}
+  m_CampInfoPrefab: {fileID: 1730714672266882, guid: 5035ab754688beb4d9d8e6315b160276,
+    type: 2}
   m_AmountOfCamps: 5
   m_RadiusBox: {x: 96.63, y: 146.97}
   m_GenCheckRadius: 8
@@ -3245,6 +3249,8 @@ MonoBehaviour:
   - {fileID: 1769018919711226, guid: 69afdd60ee78dc549a6f597ff07ae6be, type: 2}
   m_HunterObject: {fileID: 1771062691231908, guid: ddc5da536c879c646b197a004df2526b,
     type: 2}
+  m_CampInfoPrefab: {fileID: 1730714672266882, guid: 5035ab754688beb4d9d8e6315b160276,
+    type: 2}
   m_AmountOfCamps: 5
   m_RadiusBox: {x: 100, y: 200.5}
   m_GenCheckRadius: 8
@@ -3507,6 +3513,48 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 52a0fe661c1228b45ae458d53e3c7ac9, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1792809866
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4015836390154584, guid: 5035ab754688beb4d9d8e6315b160276, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -153.1666
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015836390154584, guid: 5035ab754688beb4d9d8e6315b160276, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -3.1926904
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015836390154584, guid: 5035ab754688beb4d9d8e6315b160276, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.88896084
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015836390154584, guid: 5035ab754688beb4d9d8e6315b160276, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015836390154584, guid: 5035ab754688beb4d9d8e6315b160276, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015836390154584, guid: 5035ab754688beb4d9d8e6315b160276, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015836390154584, guid: 5035ab754688beb4d9d8e6315b160276, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015836390154584, guid: 5035ab754688beb4d9d8e6315b160276, type: 2}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 5035ab754688beb4d9d8e6315b160276, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1794943692 stripped
 Transform:
@@ -3915,6 +3963,8 @@ MonoBehaviour:
   - {fileID: 1180724130557310, guid: ac8d89f2c34eb644abb09d1a93f2bd7d, type: 2}
   - {fileID: 1769018919711226, guid: 69afdd60ee78dc549a6f597ff07ae6be, type: 2}
   m_HunterObject: {fileID: 1771062691231908, guid: ddc5da536c879c646b197a004df2526b,
+    type: 2}
+  m_CampInfoPrefab: {fileID: 1730714672266882, guid: 5035ab754688beb4d9d8e6315b160276,
     type: 2}
   m_AmountOfCamps: 5
   m_RadiusBox: {x: 147.2, y: 92.6}
