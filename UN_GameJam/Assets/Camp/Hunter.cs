@@ -31,7 +31,6 @@ public class Hunter : MonoBehaviour {
         {
             m_CurrentTargetIndex = newIndex;
             m_MoveDirection = m_WalkTargets[m_CurrentTargetIndex].position - this.transform.position;
-            Debug.Log(this.transform.name + " " + m_WalkTargets[m_CurrentTargetIndex].name);
             m_MoveDirection.Normalize();
 
         }

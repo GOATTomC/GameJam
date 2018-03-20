@@ -53,7 +53,7 @@ public class GenerateCamp : MonoBehaviour {
                     Vector2 randomLocation = (Random.insideUnitSphere * m_GenCheckRadius) + new Vector3(spawnPositions[spawnPos].x, spawnPositions[spawnPos].y);
                     if (CanPlace(randomLocation, m_CampObjects[campObj]))
                     {
-                        objects[campObj] = Instantiate(m_CampObjects[campObj], randomLocation, Quaternion.identity).transform;
+                        objects[campObj] = Instantiate(m_CampObjects[campObj], randomLocation, Quaternion.identity, this.transform).transform;
                         isPlaced = true;
                     }
                 }
@@ -76,7 +76,7 @@ public class GenerateCamp : MonoBehaviour {
 
     private void SpawnHunter(Vector2 SpawnPosition, Transform[] campObjects)
     {
-        GameObject tempHunter = Instantiate(m_HunterObject, SpawnPosition, Quaternion.identity);
+        GameObject tempHunter = Instantiate(m_HunterObject, SpawnPosition, Quaternion.identity, this.transform);
         tempHunter.GetComponent<Hunter>().SetWalkTargets(campObjects);
     }
 
