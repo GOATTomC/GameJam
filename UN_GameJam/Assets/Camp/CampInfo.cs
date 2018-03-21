@@ -43,6 +43,7 @@ public class CampInfo : MonoBehaviour {
 
     public void AttackCamp(GameObject marker)
     {
+        ScoreManager.Instance.AddScore(75);
         m_Marker = marker;
         StartCoroutine(CallAttackOnCamp());
     }
@@ -72,5 +73,6 @@ public class CampInfo : MonoBehaviour {
             m_CampItems[campObject].Destroy();
         }
         m_Hunter.Scare();
+        ScoreManager.Instance.AddScore(100);
     }
 }

@@ -30,6 +30,7 @@ public class Trap : MonoBehaviour {
     private void Activate()
     {
         this.m_Animator.SetTrigger("Activate");
+        ScoreManager.Instance.SubstractScore(100);
     }
 
     public void Dismantle()
@@ -37,6 +38,7 @@ public class Trap : MonoBehaviour {
         GameObject temp = Instantiate(m_DismantleCloud, this.transform.position, Quaternion.identity);
         Destroy(temp, 2f);
         Destroy(this.gameObject);
+        ScoreManager.Instance.AddScore(50);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

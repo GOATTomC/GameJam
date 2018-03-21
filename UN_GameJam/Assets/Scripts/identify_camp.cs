@@ -5,6 +5,7 @@ using UnityEngine;
 public class identify_camp : MonoBehaviour {
     bool is_marked = false;
     [SerializeField] GameObject marker;
+    [SerializeField] Transform playerTransform;
     void Update () {
 
         if (Input.GetMouseButtonDown(0))
@@ -26,7 +27,8 @@ public class identify_camp : MonoBehaviour {
                 }
                  else if (hit.transform.CompareTag("trap"))
                 {
-                    hit.transform.GetComponent<Trap>().Dismantle();
+                    if (Vector3.Distance(playerTransform.position, hit.transform.position) < 8)
+                         hit.transform.GetComponent<Trap>().Dismantle();
                 }
                 
                 
