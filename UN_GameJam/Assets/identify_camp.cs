@@ -19,7 +19,8 @@ public class identify_camp : MonoBehaviour {
                     CampInfo campInfo = hit.transform.GetComponent<CampItem>().CampInfo;
                     if (campInfo.CanMark())
                     {
-                        Instantiate(marker,campInfo.GetPosition(), Quaternion.identity);
+                        GameObject markerTemp = Instantiate(marker,campInfo.GetPosition(), Quaternion.identity);
+                        campInfo.AttackCamp(markerTemp);
                     }
                     
                 }

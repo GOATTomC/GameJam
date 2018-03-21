@@ -5,6 +5,7 @@ using UnityEngine;
 public class CampItem : MonoBehaviour {
 
     private CampInfo m_CampInfo;
+    [SerializeField] private Sprite m_DestroyedItem;
     
     public CampInfo CampInfo { get { return m_CampInfo; } set { m_CampInfo = value; } }
 
@@ -17,4 +18,9 @@ public class CampItem : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    public void Destroy()
+    {
+        this.GetComponent<SpriteRenderer>().sprite = m_DestroyedItem;
+    }
 }

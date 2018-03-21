@@ -652,7 +652,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -3710,6 +3710,101 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 52a0fe661c1228b45ae458d53e3c7ac9, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1448415512
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114307424085076330, guid: f1141e4cc48f6d64fa8487af44213566,
+        type: 2}
+      propertyPath: m_AttackAnimals.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4213318858369064, guid: f1141e4cc48f6d64fa8487af44213566, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -3.1538403
+      objectReference: {fileID: 0}
+    - target: {fileID: 4213318858369064, guid: f1141e4cc48f6d64fa8487af44213566, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 7.058707
+      objectReference: {fileID: 0}
+    - target: {fileID: 4213318858369064, guid: f1141e4cc48f6d64fa8487af44213566, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.32785466
+      objectReference: {fileID: 0}
+    - target: {fileID: 4213318858369064, guid: f1141e4cc48f6d64fa8487af44213566, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4213318858369064, guid: f1141e4cc48f6d64fa8487af44213566, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4213318858369064, guid: f1141e4cc48f6d64fa8487af44213566, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4213318858369064, guid: f1141e4cc48f6d64fa8487af44213566, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4213318858369064, guid: f1141e4cc48f6d64fa8487af44213566, type: 2}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 114307424085076330, guid: f1141e4cc48f6d64fa8487af44213566,
+        type: 2}
+      propertyPath: m_AttackAnimals.Array.data[0]
+      value: 
+      objectReference: {fileID: 1031352337658874, guid: 2b6be5a0cc7b74b44b48c105d645ca2a,
+        type: 2}
+    - target: {fileID: 114307424085076330, guid: f1141e4cc48f6d64fa8487af44213566,
+        type: 2}
+      propertyPath: m_AttackAnimals.Array.data[1]
+      value: 
+      objectReference: {fileID: 1031352337658874, guid: 2b6be5a0cc7b74b44b48c105d645ca2a,
+        type: 2}
+    - target: {fileID: 114307424085076330, guid: f1141e4cc48f6d64fa8487af44213566,
+        type: 2}
+      propertyPath: m_AttackAnimals.Array.data[2]
+      value: 
+      objectReference: {fileID: 1031352337658874, guid: f92420b4c39478443b69f08cc09c3faf,
+        type: 2}
+    - target: {fileID: 114307424085076330, guid: f1141e4cc48f6d64fa8487af44213566,
+        type: 2}
+      propertyPath: m_AttackAnimals.Array.data[3]
+      value: 
+      objectReference: {fileID: 1031352337658874, guid: 2b6be5a0cc7b74b44b48c105d645ca2a,
+        type: 2}
+    - target: {fileID: 114307424085076330, guid: f1141e4cc48f6d64fa8487af44213566,
+        type: 2}
+      propertyPath: m_AttackAnimals.Array.data[4]
+      value: 
+      objectReference: {fileID: 1031352337658874, guid: f92420b4c39478443b69f08cc09c3faf,
+        type: 2}
+    - target: {fileID: 114307424085076330, guid: f1141e4cc48f6d64fa8487af44213566,
+        type: 2}
+      propertyPath: m_AttackAnimals.Array.data[5]
+      value: 
+      objectReference: {fileID: 1031352337658874, guid: f92420b4c39478443b69f08cc09c3faf,
+        type: 2}
+    - target: {fileID: 114307424085076330, guid: f1141e4cc48f6d64fa8487af44213566,
+        type: 2}
+      propertyPath: m_AttackAnimals.Array.data[6]
+      value: 
+      objectReference: {fileID: 1031352337658874, guid: 2b6be5a0cc7b74b44b48c105d645ca2a,
+        type: 2}
+    - target: {fileID: 114307424085076330, guid: f1141e4cc48f6d64fa8487af44213566,
+        type: 2}
+      propertyPath: m_AttackAnimals.Array.data[7]
+      value: 
+      objectReference: {fileID: 1031352337658874, guid: f92420b4c39478443b69f08cc09c3faf,
+        type: 2}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: f1141e4cc48f6d64fa8487af44213566, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1453811316
 Prefab:

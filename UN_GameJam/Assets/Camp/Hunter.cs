@@ -8,6 +8,7 @@ public class Hunter : MonoBehaviour {
     private int m_CurrentTargetIndex;
     private Vector3 m_MoveDirection;
     private bool m_IsWaiting = false;
+    private bool m_IsScared = false;
 
     [SerializeField] private float m_MoveSpeed;
 
@@ -50,7 +51,7 @@ public class Hunter : MonoBehaviour {
 
     private void Move()
     {
-        if (m_IsWaiting)
+        if (m_IsWaiting && !m_IsScared)
             return;
 
         this.transform.Translate((m_MoveDirection * m_MoveSpeed) * Time.deltaTime);
@@ -66,5 +67,16 @@ public class Hunter : MonoBehaviour {
         yield return new WaitForSeconds(Random.Range(2, 10));
         SetNewDirection();
         m_IsWaiting = false;
+    }
+
+    public void Scare()
+    {
+        m_MoveSpeed = 10;
+        Vector2 direction = (Random.insideUnitCircle * 3) + new Vector2(this.transform.position.x, this.transform.position.y);
+        direction.Normalize();
+
+        m_MoveDirection = direction;
+        m_IsScared = true;
+        Destroy(this.gameObject, 5f);
     }
 }

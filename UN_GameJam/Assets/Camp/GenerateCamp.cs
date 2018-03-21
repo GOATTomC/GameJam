@@ -59,8 +59,6 @@ public class GenerateCamp : MonoBehaviour {
                     }
                 }
             }
-
-            SpawnHunter(spawnPositions[spawnPos], objects);
             GenCampInfo(objects);
         }
 
@@ -77,10 +75,11 @@ public class GenerateCamp : MonoBehaviour {
         return true;
     }
 
-    private void SpawnHunter(Vector2 SpawnPosition, Transform[] campObjects)
+    private void SpawnHunter(Vector2 SpawnPosition, Transform[] campObjects, CampInfo CampInfo)
     {
         GameObject tempHunter = Instantiate(m_HunterObject, SpawnPosition, Quaternion.identity, this.transform);
         tempHunter.GetComponent<Hunter>().SetWalkTargets(campObjects);
+        CampInfo.SetHunter(tempHunter.GetComponent<Hunter>());
     }
 
     private void OnDrawGizmos()
@@ -91,6 +90,12 @@ public class GenerateCamp : MonoBehaviour {
     private void GenCampInfo(Transform[] objects)
     {
         Vector3 averagePosition = Vector2.zero;
+
+        CampItem[] items = new CampItem[objects.Length];
+        for (int objectCamp = 0; objectCamp < objects.Length; objectCamp++)
+        {
+            items[objectCamp] = objects[objectCamp].GetComponent<CampItem>();
+        }
 
         for (int campObject = 0; campObject < objects.Length; campObject++)
         {
@@ -104,8 +109,14 @@ public class GenerateCamp : MonoBehaviour {
         for (int campObject = 0; campObject < objects.Length; campObject++)
         {
             if (tempCampInfo != null)
+            {
                 objects[campObject].GetComponent<CampItem>().CampInfo = tempCampInfo;
+                tempCampInfo.SetCampItems(items);
+            }
+
         }
+
+        SpawnHunter(averagePosition, objects, tempCampInfo);
     }
 
 
