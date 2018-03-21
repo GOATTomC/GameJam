@@ -8,8 +8,12 @@ public class PlayerController : MonoBehaviour {
     public bool dashCooldown = true;
     public float timer = 0f;
     public Image bar;
-   
+    Animator walking_animation;
     //Dash function
+    void Start()
+    {
+        walking_animation = GetComponent<Animator>();
+    }
     void Dash()
     {
         bool dash_ready = false;
@@ -32,13 +36,8 @@ public class PlayerController : MonoBehaviour {
         speed = 5f;
     }
 void Update () {
-
-        if (Input.GetAxis("Vertical") > 0.2)
-        {
-           // animator.CrossFade("Player_walk");
-        }
-            
-   
+        float move = Input.GetAxis("Vertical");
+        walking_animation.SetFloat("Speed", move);
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -50,25 +49,34 @@ void Update () {
         {
             currentPosition.x += speed * Time.deltaTime;
             transform.localRotation = Quaternion.Euler(0, 0, 0);
+            walking_animation.SetFloat("Speed", 1);
         }
         if (Input.GetKey(KeyCode.A))
         {
             currentPosition.x -= speed * Time.deltaTime;
             transform.localRotation = Quaternion.Euler(0,180,0);
+            walking_animation.SetFloat("Speed", 1);
         }
         if (Input.GetKey(KeyCode.W))
         {
             currentPosition.y += speed * Time.deltaTime;
+            walking_animation.SetFloat("Speed", 1);
         }
         if (Input.GetKey(KeyCode.S))
         {
             currentPosition.y -= speed * Time.deltaTime;
+            walking_animation.SetFloat("Speed", 1);
+        }
+
+        if (!Input.anyKey)
+        {
+            walking_animation.SetFloat("Speed", 0);
         }
 
         timer -= Time.deltaTime;
         rb.MovePosition(currentPosition);
         bar.fillAmount = 1f-(timer / 5f);
-
+        
 
 
     }

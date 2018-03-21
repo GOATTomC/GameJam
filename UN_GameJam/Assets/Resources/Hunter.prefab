@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212891252643268224}
   - component: {fileID: 61119392153772918}
   - component: {fileID: 114518492559384498}
+  - component: {fileID: 95999372969031176}
   m_Layer: 0
   m_Name: Hunter
   m_TagString: Untagged
@@ -67,6 +68,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.3471527, y: 11.727135}
   m_EdgeRadius: 0
+--- !u!95 &95999372969031176
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1209954661585456}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b54222e04571655438837e3f0f0616bf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114518492559384498
 MonoBehaviour:
   m_ObjectHideFlags: 1

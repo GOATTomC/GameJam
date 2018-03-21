@@ -9,6 +9,8 @@ public class Hunter : MonoBehaviour {
     private Vector3 m_MoveDirection;
     private bool m_IsWaiting = false;
     private bool m_IsScared = false;
+    private Vector3 old_pos;
+    Animator walk;
 
     [SerializeField] private float m_MoveSpeed;
 
@@ -17,14 +19,29 @@ public class Hunter : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         SetNewDirection();
-	}
+        walk = GetComponent<Animator>();
+        
+    }
 	
 	// Update is called once per frame
 	void Update () {
         Move();
         CheckDestination();
-	}
-
+        Check_movement();
+        old_pos = transform.position;
+    }
+    void Check_movement()
+    {
+        if (old_pos == transform.position)
+        {
+            walk.SetInteger("Speed", 0);
+            old_pos = transform.position;
+        }
+        else
+        {
+            walk.SetInteger("Speed", 1);
+        }
+                }
     private void SetNewDirection()
     {
         int newIndex = Random.Range(0, m_WalkTargets.Length);
@@ -43,6 +60,7 @@ public class Hunter : MonoBehaviour {
         {
             if (!m_IsWaiting)
             {
+                
                 m_IsWaiting = true;
                 StartCoroutine(WaitBeforeNewTarget());
             }
@@ -55,6 +73,7 @@ public class Hunter : MonoBehaviour {
             return;
 
         this.transform.Translate((m_MoveDirection * m_MoveSpeed) * Time.deltaTime);
+      
     }
 
     public void SetWalkTargets(Transform[] campObjects)
@@ -64,9 +83,11 @@ public class Hunter : MonoBehaviour {
 
     private IEnumerator WaitBeforeNewTarget()
     {
-        yield return new WaitForSeconds(Random.Range(2, 10));
+        
+        yield return new WaitForSeconds(Random.Range(2, 5));
         SetNewDirection();
         m_IsWaiting = false;
+        
     }
 
     public void Scare()
