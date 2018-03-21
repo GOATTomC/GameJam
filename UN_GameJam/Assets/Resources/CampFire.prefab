@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4574944397436668}
   - component: {fileID: 212876274976766916}
   - component: {fileID: 95142747101431756}
+  - component: {fileID: 114328593673724172}
   m_Layer: 0
   m_Name: CampFire
   m_TagString: Untagged
@@ -58,6 +59,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114328593673724172
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1604804474390346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae5ed0967fd921845aef646c934a8e22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_DestroyedItem: {fileID: 21300016, guid: 706fcdf66f18d974598a56585b83cf0d, type: 3}
 --- !u!212 &212876274976766916
 SpriteRenderer:
   m_ObjectHideFlags: 1

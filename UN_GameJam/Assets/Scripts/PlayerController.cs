@@ -35,7 +35,7 @@ void Update () {
 
         if (Input.GetAxis("Vertical") > 0.2)
         {
-            animator.CrossFade("Player_walk");
+           // animator.CrossFade("Player_walk");
         }
             
    
