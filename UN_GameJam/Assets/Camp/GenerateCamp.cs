@@ -7,19 +7,27 @@ public class GenerateCamp : MonoBehaviour {
     [SerializeField] private GameObject[] m_CampObjects;
     [SerializeField] private GameObject m_HunterObject;
     [SerializeField] private GameObject m_CampInfoPrefab;
+    [SerializeField] private GameObject m_TrapPrefab;
 
 
     [SerializeField] private int m_AmountOfCamps;
     [SerializeField] private Vector2 m_RadiusBox;
     [SerializeField] private float m_GenCheckRadius;
+    [SerializeField] private float m_TrapAmount;
 
 	// Use this for initialization
 	void Awake () {
-        ChooseGenPosition();
+
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    private void Start()
+    {
+        ChooseGenPosition();
+        GenTraps();
+    }
+
+    // Update is called once per frame
+    void Update () {
 		
 	}
 
@@ -117,6 +125,14 @@ public class GenerateCamp : MonoBehaviour {
         }
 
         SpawnHunter(averagePosition, objects, tempCampInfo);
+    }
+
+    private void GenTraps()
+    {
+        for (int i = 0; i < m_TrapAmount; i++)
+        {
+            Instantiate(m_TrapPrefab, new Vector3(Random.Range(this.transform.position.x - (m_RadiusBox.x / 2), this.transform.position.x + (m_RadiusBox.y / 2)), Random.Range(this.transform.position.y - (m_RadiusBox.y / 2), this.transform.position.y + (m_RadiusBox.y) / 2)), Quaternion.identity);
+        }
     }
 
 

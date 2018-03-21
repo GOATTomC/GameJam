@@ -24,6 +24,10 @@ public class identify_camp : MonoBehaviour {
                     }
                     
                 }
+                 else if (hit.transform.CompareTag("trap"))
+                {
+                    hit.transform.GetComponent<Trap>().Dismantle();
+                }
                 
                 
             }
