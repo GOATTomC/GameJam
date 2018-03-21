@@ -296,6 +296,8 @@ MonoBehaviour:
   - {fileID: 1769018919711226, guid: 69afdd60ee78dc549a6f597ff07ae6be, type: 2}
   m_HunterObject: {fileID: 1771062691231908, guid: ddc5da536c879c646b197a004df2526b,
     type: 2}
+  m_CampInfoPrefab: {fileID: 1730714672266882, guid: 5035ab754688beb4d9d8e6315b160276,
+    type: 2}
   m_AmountOfCamps: 10
   m_RadiusBox: {x: 159.69, y: 92.6}
   m_GenCheckRadius: 8
@@ -310,7 +312,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &60291176
 MonoBehaviour:
@@ -323,12 +325,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5e45c314f348f46956793c2ddc7d96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FootStep: {fileID: 1535608253862764, guid: d066a93ef33d5da43ab1d26cfb1e2d73, type: 2}
---- !u!4 &94516239 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4124731298599836, guid: ddc5da536c879c646b197a004df2526b,
-    type: 2}
-  m_PrefabInternal: {fileID: 1039341021}
+  m_FootStep: {fileID: 1875798125714948, guid: d46a0f8a3b86e884b87b104e9acb794b, type: 2}
+  m_FootStepRadius: 10
 --- !u!4 &102217871 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4021619319398994, guid: 52a0fe661c1228b45ae458d53e3c7ac9,
@@ -883,7 +881,7 @@ Transform:
   - {fileID: 1956007786}
   - {fileID: 3218815}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &374344971 stripped
 Transform:
@@ -1167,7 +1165,7 @@ Transform:
   - {fileID: 568399772}
   - {fileID: 1804037113}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &502341029 stripped
 Transform:
@@ -1297,7 +1295,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &556912409
 Prefab:
@@ -1442,7 +1440,7 @@ Transform:
   - {fileID: 468735152}
   - {fileID: 167316013}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &631418298
 Prefab:
@@ -1845,7 +1843,7 @@ Prefab:
     - target: {fileID: 224870783964375710, guid: ff5de819a93560c4086d084269e999f4,
         type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 224870783964375710, guid: ff5de819a93560c4086d084269e999f4,
         type: 2}
@@ -1994,7 +1992,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e776aa04fdef6094c8bb10d1cdb0ee83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Target: {fileID: 94516239}
+  m_Target: {x: 0, y: 0}
 --- !u!4 &844729467 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4021619319398994, guid: 52a0fe661c1228b45ae458d53e3c7ac9,
@@ -2096,7 +2094,7 @@ Transform:
   - {fileID: 1570464550}
   - {fileID: 489180749}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &898426141 stripped
 Transform:
@@ -2583,48 +2581,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 52a0fe661c1228b45ae458d53e3c7ac9, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &1039341021
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4124731298599836, guid: ddc5da536c879c646b197a004df2526b, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -158.36618
-      objectReference: {fileID: 0}
-    - target: {fileID: 4124731298599836, guid: ddc5da536c879c646b197a004df2526b, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -15.217012
-      objectReference: {fileID: 0}
-    - target: {fileID: 4124731298599836, guid: ddc5da536c879c646b197a004df2526b, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.38671875
-      objectReference: {fileID: 0}
-    - target: {fileID: 4124731298599836, guid: ddc5da536c879c646b197a004df2526b, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4124731298599836, guid: ddc5da536c879c646b197a004df2526b, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4124731298599836, guid: ddc5da536c879c646b197a004df2526b, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4124731298599836, guid: ddc5da536c879c646b197a004df2526b, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4124731298599836, guid: ddc5da536c879c646b197a004df2526b, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: ddc5da536c879c646b197a004df2526b, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &1050055846
 Prefab:
   m_ObjectHideFlags: 0
@@ -2840,6 +2796,8 @@ MonoBehaviour:
   - {fileID: 1769018919711226, guid: 69afdd60ee78dc549a6f597ff07ae6be, type: 2}
   m_HunterObject: {fileID: 1771062691231908, guid: ddc5da536c879c646b197a004df2526b,
     type: 2}
+  m_CampInfoPrefab: {fileID: 1730714672266882, guid: 5035ab754688beb4d9d8e6315b160276,
+    type: 2}
   m_AmountOfCamps: 5
   m_RadiusBox: {x: 96.63, y: 146.97}
   m_GenCheckRadius: 8
@@ -2854,7 +2812,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1111958325
 MonoBehaviour:
@@ -2867,7 +2825,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5e45c314f348f46956793c2ddc7d96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FootStep: {fileID: 1535608253862764, guid: d066a93ef33d5da43ab1d26cfb1e2d73, type: 2}
+  m_FootStep: {fileID: 1875798125714948, guid: d46a0f8a3b86e884b87b104e9acb794b, type: 2}
+  m_FootStepRadius: 10
 --- !u!4 &1127724746 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4021619319398994, guid: 52a0fe661c1228b45ae458d53e3c7ac9,
@@ -3507,7 +3466,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4971506703780662, guid: 437102e04bec2ef4ba84b1db7340b6d0, type: 2}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 437102e04bec2ef4ba84b1db7340b6d0, type: 2}
@@ -4046,6 +4005,8 @@ MonoBehaviour:
   - {fileID: 1769018919711226, guid: 69afdd60ee78dc549a6f597ff07ae6be, type: 2}
   m_HunterObject: {fileID: 1771062691231908, guid: ddc5da536c879c646b197a004df2526b,
     type: 2}
+  m_CampInfoPrefab: {fileID: 1730714672266882, guid: 5035ab754688beb4d9d8e6315b160276,
+    type: 2}
   m_AmountOfCamps: 5
   m_RadiusBox: {x: 100, y: 200.5}
   m_GenCheckRadius: 8
@@ -4060,7 +4021,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1682302833
 MonoBehaviour:
@@ -4073,7 +4034,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5e45c314f348f46956793c2ddc7d96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FootStep: {fileID: 1535608253862764, guid: d066a93ef33d5da43ab1d26cfb1e2d73, type: 2}
+  m_FootStep: {fileID: 1875798125714948, guid: d46a0f8a3b86e884b87b104e9acb794b, type: 2}
+  m_FootStepRadius: 10
 --- !u!4 &1700354157 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4021619319398994, guid: 52a0fe661c1228b45ae458d53e3c7ac9,
@@ -4165,7 +4127,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1702927199
 MonoBehaviour:
@@ -4613,7 +4575,7 @@ Transform:
   - {fileID: 1195239117}
   - {fileID: 461344086}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 11.941001}
 --- !u!4 &1991600560 stripped
 Transform:
@@ -4900,6 +4862,8 @@ MonoBehaviour:
   - {fileID: 1769018919711226, guid: 69afdd60ee78dc549a6f597ff07ae6be, type: 2}
   m_HunterObject: {fileID: 1771062691231908, guid: ddc5da536c879c646b197a004df2526b,
     type: 2}
+  m_CampInfoPrefab: {fileID: 1730714672266882, guid: 5035ab754688beb4d9d8e6315b160276,
+    type: 2}
   m_AmountOfCamps: 5
   m_RadiusBox: {x: 147.2, y: 92.6}
   m_GenCheckRadius: 8
@@ -4914,7 +4878,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2146857609
 MonoBehaviour:
@@ -4927,4 +4891,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5e45c314f348f46956793c2ddc7d96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FootStep: {fileID: 1535608253862764, guid: d066a93ef33d5da43ab1d26cfb1e2d73, type: 2}
+  m_FootStep: {fileID: 1875798125714948, guid: d46a0f8a3b86e884b87b104e9acb794b, type: 2}
+  m_FootStepRadius: 10

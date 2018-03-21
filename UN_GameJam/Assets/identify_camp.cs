@@ -16,8 +16,12 @@ public class identify_camp : MonoBehaviour {
             {
              if (hit.transform.CompareTag("camp"))
                 {
-                    Debug.Log(hit.transform.gameObject.tag);
-                    Instantiate(marker, hit.point, Quaternion.identity);
+                    CampInfo campInfo = hit.transform.GetComponent<CampItem>().CampInfo;
+                    if (campInfo.CanMark())
+                    {
+                        Instantiate(marker,campInfo.GetPosition(), Quaternion.identity);
+                    }
+                    
                 }
                 
                 
