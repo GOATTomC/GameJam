@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour {
         }
         if (dash_ready)
         {
-            speed *= 3f;
+            speed *= 4f;
             timer = 5f;
             dash_ready = false;
             StartCoroutine(return_speed());

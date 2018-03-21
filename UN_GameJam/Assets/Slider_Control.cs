@@ -4,6 +4,8 @@ using UnityEngine.UI;
 
 public class Slider_Control : MonoBehaviour
 {
+    public float volume_input;
+    public Slider volume_Slider;
     AudioSource sound;
     void Start()
     {
@@ -11,11 +13,12 @@ public class Slider_Control : MonoBehaviour
         volume_Slider.value = 0.5f;
         sound.Play();
     }
-    public Slider volume_Slider;
+    
 
     public void SubmitSliderSetting()
     {
         //Displays the value of the slider in the console.
-        sound.volume = volume_Slider.value;
+        volume_input = volume_Slider.value;
+        sound.volume = volume_input;
     }
 }
