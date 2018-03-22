@@ -13,6 +13,7 @@ public class ScoreManager : MonoBehaviour {
     private void Awake()
     {
         Instance = this;
+        DontDestroyOnLoad(this);
     }
 
     // Use this for initialization
@@ -44,4 +45,16 @@ public class ScoreManager : MonoBehaviour {
     {
         m_ScoreText.text = "Score: " + m_CurrentScore;
     }
+
+    public int GetScore()
+    {
+        return m_CurrentScore;
+    }
+}
+
+[System.Serializable]
+public class HighScore
+{
+    public List<int> Scores;
+    public List<string> Names;
 }
