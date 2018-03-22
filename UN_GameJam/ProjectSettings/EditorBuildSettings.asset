@@ -14,3 +14,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Camp/GenScene.unity
     guid: cb2dc857069c56a408902270b283b7e2
+  - enabled: 1
+    path: Assets/End Scene.unity
+    guid: 1dba41c12602f064e9a614368dca7d2f

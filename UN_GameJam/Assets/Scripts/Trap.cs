@@ -6,6 +6,8 @@ public class Trap : MonoBehaviour {
 
     [SerializeField] private GameObject m_DismantleCloud;
     private Animator m_Animator;
+    [SerializeField] private AudioClip m_DisClip;
+    private bool m_CanDoDamage = true;
 
     private void Awake()
     {
@@ -29,16 +31,28 @@ public class Trap : MonoBehaviour {
 
     private void Activate()
     {
+        if (!m_CanDoDamage)
+            return;
+
         this.m_Animator.SetTrigger("Activate");
         ScoreManager.Instance.SubstractScore(100);
+
+    }
+
+    public void PlaySFX()
+    {
+        this.GetComponent<AudioSource>().Play();
     }
 
     public void Dismantle()
     {
+        this.GetComponent<AudioSource>().clip = m_DisClip;
+        this.GetComponent<AudioSource>().Play();
         GameObject temp = Instantiate(m_DismantleCloud, this.transform.position, Quaternion.identity);
         Destroy(temp, 2f);
-        Destroy(this.gameObject);
+        Destroy(this.gameObject, 1.9f);
         ScoreManager.Instance.AddScore(50);
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
