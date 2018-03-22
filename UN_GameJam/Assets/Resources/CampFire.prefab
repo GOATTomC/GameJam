@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4574944397436668}
   - component: {fileID: 212876274976766916}
   - component: {fileID: 114328593673724172}
-  - component: {fileID: 111179444755865122}
+  - component: {fileID: 95358668602954536}
   m_Layer: 0
   m_Name: CampFire
   m_TagString: Untagged
@@ -36,26 +36,29 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1604804474390346}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.9268684, y: -54.05407, z: -1.59375}
+  m_LocalPosition: {x: 2.87965, y: -59.787193, z: -1.59375}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!111 &111179444755865122
-Animation:
+--- !u!95 &95358668602954536
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1604804474390346}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 2442e9c4d59898b438f45802d4453d54, type: 2}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 94bf9d6e8a2f2fe4a9f1407f713bf5ca, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114328593673724172
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -101,7 +104,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300016, guid: 706fcdf66f18d974598a56585b83cf0d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
