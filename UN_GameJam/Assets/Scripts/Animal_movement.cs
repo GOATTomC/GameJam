@@ -8,7 +8,7 @@ public class Animal_movement : MonoBehaviour {
 
     private float timeLeft;
     private Vector3 direction;
-    private float speed = 3;
+    public float speed = 3;
 
 
 

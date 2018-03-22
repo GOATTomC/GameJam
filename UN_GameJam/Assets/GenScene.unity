@@ -1037,6 +1037,7 @@ GameObject:
   - component: {fileID: 206253584}
   - component: {fileID: 206253587}
   - component: {fileID: 206253586}
+  - component: {fileID: 206253588}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1160,6 +1161,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &206253588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 206253583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7f23b6075bdaa14fb390da709a4e1a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1215590024}
+  x_length: 10
+  y_length: 10
+  amount: 50
+  animals:
+  - {fileID: 1362938899647980, guid: 5011ccad0cbc71a44b8a30cde2cbf354, type: 2}
+  - {fileID: 1718183920309158, guid: 3c2892ba34195e84b86ef05c66ba8e77, type: 2}
+  - {fileID: 1287503959038038, guid: 542f41eece2a9854b8de27f773443645, type: 2}
 --- !u!4 &210989763 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4561592805840330, guid: d369ed1f5b470874dbd9bf16909cd5a9,
@@ -6358,6 +6378,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!50 &1215590024 stripped
+Rigidbody2D:
+  m_PrefabParentObject: {fileID: 50381369174438414, guid: 778c3ace8c724d448a1dbf5754edad3c,
+    type: 2}
+  m_PrefabInternal: {fileID: 893909714}
 --- !u!4 &1220892122 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4021619319398994, guid: 52a0fe661c1228b45ae458d53e3c7ac9,
