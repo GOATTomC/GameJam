@@ -11,6 +11,7 @@ public class Timer : MonoBehaviour {
     [SerializeField] private AudioSource m_TickAudio;
     [SerializeField] private AudioClip m_Tick;
     [SerializeField] private AudioClip m_Tock;
+    [SerializeField] private PauseMenu m_PauseMenu;
     private bool m_IsZero = false;
     private bool m_IsEven;
     private bool m_Previous = false;
@@ -29,6 +30,9 @@ public class Timer : MonoBehaviour {
 
     private void UpdateTimer()
     {
+
+        if (m_PauseMenu.IsPaused)
+            return;
 
         if (!m_IsZero)
             m_TimeLeftSeconds -= Time.deltaTime;
