@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Camp/GenScene.unity
+- path: Assets/GenScene.unity
   isLoaded: 1
   isActive: 1
