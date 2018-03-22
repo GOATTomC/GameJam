@@ -3029,7 +3029,28 @@ Prefab:
     - target: {fileID: 224059638964162552, guid: 73dec206035166f4685a4de0f5f12513,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -57.4
+      value: -80.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114889463614398634, guid: 73dec206035166f4685a4de0f5f12513,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 04c3d669e1b5017468eff7cc5bef201d,
+        type: 3}
+    - target: {fileID: 114889463614398634, guid: 73dec206035166f4685a4de0f5f12513,
+        type: 2}
+      propertyPath: m_FontData.m_FontSize
+      value: 170
+      objectReference: {fileID: 0}
+    - target: {fileID: 114889463614398634, guid: 73dec206035166f4685a4de0f5f12513,
+        type: 2}
+      propertyPath: m_FontData.m_MaxSize
+      value: 189
+      objectReference: {fileID: 0}
+    - target: {fileID: 224059638964162552, guid: 73dec206035166f4685a4de0f5f12513,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 73dec206035166f4685a4de0f5f12513, type: 2}
@@ -4337,6 +4358,89 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_TimerText: {fileID: 331213250}
+  m_TickAudio: {fileID: 841329068}
+  m_Tick: {fileID: 8300000, guid: d41a76bea4765ac44b289755f24ffb52, type: 3}
+  m_Tock: {fileID: 8300000, guid: fbcef7a106ec7c24183ced61f82928ec, type: 3}
+--- !u!82 &841329068
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 841329064}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: d41a76bea4765ac44b289755f24ffb52, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1 &843020765
 GameObject:
   m_ObjectHideFlags: 0
@@ -5146,12 +5250,28 @@ Prefab:
     - target: {fileID: 224954288365160140, guid: 7a8537fab6b70e94dbda595b895c5692,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -11.24
+      value: -15.51
       objectReference: {fileID: 0}
     - target: {fileID: 224954288365160140, guid: 7a8537fab6b70e94dbda595b895c5692,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 609.14
+      value: 651.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 114860704801705346, guid: 7a8537fab6b70e94dbda595b895c5692,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 04c3d669e1b5017468eff7cc5bef201d,
+        type: 3}
+    - target: {fileID: 114860704801705346, guid: 7a8537fab6b70e94dbda595b895c5692,
+        type: 2}
+      propertyPath: m_FontData.m_FontSize
+      value: 170
+      objectReference: {fileID: 0}
+    - target: {fileID: 114860704801705346, guid: 7a8537fab6b70e94dbda595b895c5692,
+        type: 2}
+      propertyPath: m_FontData.m_MaxSize
+      value: 170
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7a8537fab6b70e94dbda595b895c5692, type: 2}
